@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --container-x: clamp(1rem, 5vw, 2.5rem);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-feature-settings: "ss01", "cv01";
+    overflow-x: clip;
+  }
+
+  ::selection {
+    @apply bg-brand text-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.brand.500");
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-rk {
+    @apply mx-auto w-full max-w-container px-[var(--container-x)];
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 font-mono text-xs font-medium uppercase tracking-[0.22em] text-brand-600;
+  }
+  .label-mono {
+    @apply font-mono text-[11px] font-medium uppercase tracking-[0.2em];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold
+      transition-all duration-300 ease-premium;
+  }
+  /* Signature blue→green gradient CTA */
+  .btn-primary {
+    @apply btn relative overflow-hidden text-white shadow-[0_8px_24px_-8px_rgba(19,136,198,0.5)];
+    background-image: linear-gradient(135deg, #1388c6 0%, #2a9f7e 55%, #54b23c 100%);
+    background-size: 160% 160%;
+    background-position: 0% 50%;
+  }
+  .btn-primary:hover {
+    background-position: 100% 50%;
+    @apply -translate-y-0.5 shadow-[0_14px_32px_-8px_rgba(19,136,198,0.55)];
+  }
+  .btn-primary:active {
+    @apply translate-y-0;
+  }
+  .btn-dark {
+    @apply btn bg-navy-900 text-slate-50 hover:bg-navy-800 active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply btn border border-slate-300 bg-white/70 text-slate-900 hover:border-brand hover:text-brand hover:bg-white;
+  }
+  .btn-ghost-light {
+    @apply btn border border-white/20 bg-white/5 text-slate-50 hover:border-white/40 hover:bg-white/10;
+  }
+
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-card transition-all duration-500 ease-premium;
+  }
+
+  .blueprint {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  /* subtle gradient hairline border on hover for premium cards */
+  .ring-gradient {
+    position: relative;
+  }
+  .ring-gradient::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, #1388c6, #54b23c);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .ring-gradient:hover::after {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .aspect-product {
+    aspect-ratio: 4 / 3;
+  }
+  .text-gradient {
+    background-image: linear-gradient(120deg, #36a2dc 0%, #54b23c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-stroke {
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.72);
+  }
+  @supports not (-webkit-text-stroke: 1px white) {
+    .text-stroke {
+      color: #fff;
+    }
+  }
+  .bg-dot-grid {
+    background-image: radial-gradient(rgba(19, 136, 198, 0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  /* film-grain texture overlay for depth on dark sections */
+  .grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  }
+  /* animated multi-stop gradient mesh for the hero */
+  .mesh-bg {
+    background:
+      radial-gradient(42% 46% at 18% 28%, rgba(19, 136, 198, 0.42), transparent 60%),
+      radial-gradient(38% 40% at 82% 22%, rgba(84, 178, 60, 0.3), transparent 60%),
+      radial-gradient(50% 55% at 70% 88%, rgba(19, 136, 198, 0.3), transparent 62%),
+      radial-gradient(40% 44% at 30% 92%, rgba(84, 178, 60, 0.22), transparent 60%);
+  }
+  /* cursor-follow spotlight on premium cards */
+  .spotlight {
+    position: relative;
+  }
+  .spotlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    background: radial-gradient(
+      220px circle at var(--mx, 50%) var(--my, 50%),
+      rgba(19, 136, 198, 0.12),
+      transparent 70%
+    );
+    pointer-events: none;
+  }
+  .spotlight:hover::before {
+    opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: transform, opacity;
+}
+html.no-js .reveal,
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .animate-spin-slow,
+  .animate-marquee {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 800 512" role="img" aria-label="Commercial Kitchen Exhaust System — demo image">
+  
+  <defs>
+    <linearGradient id="bg-proj-hood57g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-proj-hood57g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-proj-hood57g" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-proj-hood57g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="512" fill="url(#bg-proj-hood57g)"/>
+  <rect width="800" height="512" fill="url(#grid-proj-hood57g)"/>
+  <rect width="800" height="512" fill="url(#glow-proj-hood57g)"/>
+  <rect x="0" y="0" width="800" height="6" fill="url(#accent-proj-hood57g)"/>
+  <g transform="translate(0,-10)">
+    <g stroke="#8FCBEB" stroke-width="3" fill="none" stroke-linejoin="round">
+      <path d="M250 140 h260 l40 90 h-340 z"/>
+      <path d="M360 140 v-40 h60 v40" />
+      <path d="M230 230 h320 v30 h-320 z"/>
+      <path d="M300 280 v30 M480 280 v30" stroke-opacity="0.5"/>
+    </g></g>
+  <g transform="translate(40,432)">
+    <rect x="0" y="-26" width="176" height="26" rx="13" fill="url(#accent-proj-hood57g)"/>
+    <text x="12" y="-8" font-family="Arial" font-size="13" font-weight="700" fill="#fff">Kitchen Ventilation</text>
+    <text x="0" y="28" font-family="Arial" font-size="24" font-weight="700" fill="#DCEBF6">Commercial Kitchen Exhaust System</text>
+  </g>
+  
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="url(#accent-tag)"/>
+      <text x="43" y="16" font-family="Arial, sans-serif" font-size="12" font-weight="700"
+        letter-spacing="1.5" fill="#ffffff" text-anchor="middle">DEMO</text>
+    </g>
+    <defs><linearGradient id="accent-tag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/><stop offset="1" stop-color="#54B23C"/>
+    </linearGradient></defs>
+</svg>

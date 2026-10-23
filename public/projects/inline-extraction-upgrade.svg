@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 800 512" role="img" aria-label="Inline Extraction Upgrade — demo image">
+  
+  <defs>
+    <linearGradient id="bg-proj-inlinetvl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-proj-inlinetvl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-proj-inlinetvl" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-proj-inlinetvl" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="512" fill="url(#bg-proj-inlinetvl)"/>
+  <rect width="800" height="512" fill="url(#grid-proj-inlinetvl)"/>
+  <rect width="800" height="512" fill="url(#glow-proj-inlinetvl)"/>
+  <rect x="0" y="0" width="800" height="6" fill="url(#accent-proj-inlinetvl)"/>
+  <g transform="translate(0,-10)">
+    <g stroke="#8FCBEB" stroke-width="3" fill="none" stroke-linejoin="round">
+      <rect x="300" y="150" width="160" height="110" rx="10"/>
+      <path d="M250 180 h50 M250 230 h50 M460 180 h50 M460 230 h50"/>
+      <circle cx="380" cy="205" r="38"/>
+      <path d="M380 205 L380 170 M380 205 L410 225 M380 205 L350 225" stroke-opacity="0.7"/>
+    </g></g>
+  <g transform="translate(40,432)">
+    <rect x="0" y="-26" width="120" height="26" rx="13" fill="url(#accent-proj-inlinetvl)"/>
+    <text x="12" y="-8" font-family="Arial" font-size="13" font-weight="700" fill="#fff">Air Movement</text>
+    <text x="0" y="28" font-family="Arial" font-size="24" font-weight="700" fill="#DCEBF6">Inline Extraction Upgrade</text>
+  </g>
+  
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="url(#accent-tag)"/>
+      <text x="43" y="16" font-family="Arial, sans-serif" font-size="12" font-weight="700"
+        letter-spacing="1.5" fill="#ffffff" text-anchor="middle">DEMO</text>
+    </g>
+    <defs><linearGradient id="accent-tag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/><stop offset="1" stop-color="#54B23C"/>
+    </linearGradient></defs>
+</svg>

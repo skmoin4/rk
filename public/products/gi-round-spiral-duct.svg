@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="GI Round Spiral Duct — demo image">
+  
+  <defs>
+    <linearGradient id="bg-spiralbrtq" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-spiralbrtq" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-spiralbrtq" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-spiralbrtq" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-spiralbrtq)"/>
+  <rect width="800" height="600" fill="url(#grid-spiralbrtq)"/>
+  <rect width="800" height="600" fill="url(#glow-spiralbrtq)"/>
+  <rect x="0" y="0" width="800" height="6" fill="url(#accent-spiralbrtq)"/>
+  <g transform="translate(0,20)">
+    <g stroke="#8FCBEB" stroke-width="3" fill="none">
+      <ellipse cx="390" cy="200" rx="150" ry="90"/>
+      <ellipse cx="390" cy="200" rx="150" ry="90" transform="rotate(8 390 200)" stroke-opacity="0.4"/>
+      <path d="M240 200 q150 -60 300 0 M240 200 q150 60 300 0"/>
+      <path d="M270 150 l-20 10 M330 128 l-18 14 M450 128 l18 14 M510 150 l20 10" stroke-opacity="0.6"/>
+    </g></g>
+  <text x="400" y="358" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#DCEBF6" text-anchor="middle">GI Round Spiral Duct</text>
+  <line x1="340" y1="312" x2="460" y2="312" stroke="url(#accent-spiralbrtq)" stroke-width="2"/>
+  
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="url(#accent-tag)"/>
+      <text x="43" y="16" font-family="Arial, sans-serif" font-size="12" font-weight="700"
+        letter-spacing="1.5" fill="#ffffff" text-anchor="middle">DEMO</text>
+    </g>
+    <defs><linearGradient id="accent-tag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/><stop offset="1" stop-color="#54B23C"/>
+    </linearGradient></defs>
+</svg>

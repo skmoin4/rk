@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="RK Air Duct">
+  
+  <defs>
+    <linearGradient id="bg-og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-og" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-og" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-og" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg-og)"/>
+  <rect width="1200" height="630" fill="url(#grid-og)"/>
+  <rect width="1200" height="630" fill="url(#glow-og)"/>
+  <g><path d="M1017.4 300 Q 1062.42548179269 403.8691482166043 1150 300 Q 987.2151945701057 401.7444886336135 980 337.4 Z" fill="#1388C6" fill-opacity="0.765"/><path d="M980 337.4 Q 876.1308517833958 382.4254817926901 980 470 Q 878.2555113663865 307.2151945701057 942.6 300 Z" fill="#54B23C" fill-opacity="0.765"/><path d="M942.6 300 Q 897.5745182073099 196.13085178339568 810 300 Q 972.7848054298943 198.25551136638646 980 262.6 Z" fill="#1388C6" fill-opacity="0.765"/><path d="M980 262.6 Q 1083.8691482166043 217.5745182073099 980 130 Q 1081.7444886336136 292.7848054298943 1017.4 300 Z" fill="#54B23C" fill-opacity="0.765"/><circle cx="980" cy="300" r="23.8" fill="#fff" fill-opacity="0.765"/></g>
+  <g transform="translate(90,250)">
+    <text x="0" y="40" font-family="Arial" font-size="56" font-weight="800" fill="#ffffff">R K AIR DUCT</text>
+    <rect x="2" y="60" width="150" height="5" fill="url(#accent-og)"/>
+    <text x="2" y="104" font-family="Arial" font-size="24" fill="#8FCBEB">Industrial Ducting &amp; Commercial Kitchen Fabrication · Nashik</text>
+  </g>
+</svg>

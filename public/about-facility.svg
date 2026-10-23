@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-label="Fabrication Facility — demo image">
+  
+  <defs>
+    <linearGradient id="bg-facilityu4d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-facilityu4d" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-facilityu4d" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-facilityu4d" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bg-facilityu4d)"/>
+  <rect width="1200" height="640" fill="url(#grid-facilityu4d)"/>
+  <rect width="1200" height="640" fill="url(#glow-facilityu4d)"/>
+  <g transform="translate(200,0) scale(1.1)">
+    <g stroke="#8FCBEB" stroke-width="3" fill="none" stroke-linejoin="round">
+      <path d="M160 300 v-120 l90 -50 v60 l90 -50 v60 l90 -50 v150 z"/>
+      <path d="M200 260 h40 v40 h-40z M290 260 h40 v40 h-40z M380 260 h40 v40 h-40z M470 230 h40 v70 h-40z" stroke-opacity="0.5"/>
+    </g></g>
+  
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="url(#accent-tag)"/>
+      <text x="43" y="16" font-family="Arial, sans-serif" font-size="12" font-weight="700"
+        letter-spacing="1.5" fill="#ffffff" text-anchor="middle">DEMO</text>
+    </g>
+    <defs><linearGradient id="accent-tag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/><stop offset="1" stop-color="#54B23C"/>
+    </linearGradient></defs>
+</svg>

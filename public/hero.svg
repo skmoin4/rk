@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Industrial ducting — demo image">
+  
+  <defs>
+    <linearGradient id="bg-hero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-hero" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-hero" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-hero" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg-hero)"/>
+  <rect width="1200" height="800" fill="url(#grid-hero)"/>
+  <rect width="1200" height="800" fill="url(#glow-hero)"/>
+  
+    <g stroke="#8FCBEB" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.9">
+      <path d="M120 420 h160 l80 -60 h200 l80 60 h200"/>
+      <path d="M120 520 h160 l80 60 h200 l80 -60 h200"/>
+      <ellipse cx="120" cy="470" rx="22" ry="58"/>
+      <ellipse cx="1040" cy="470" rx="22" ry="58"/>
+      <path d="M440 360 v220 M680 360 v220" stroke-opacity="0.4"/>
+    </g>
+  <g><path d="M926.4 220 Q 958.1826930301341 293.31939874113243 1020 220 Q 905.0930785200746 291.81963903549195 900 246.4 Z" fill="#1388C6" fill-opacity="0.45"/><path d="M900 246.4 Q 826.6806012588676 278.1826930301342 900 340 Q 828.180360964508 225.0930785200746 873.6 220 Z" fill="#54B23C" fill-opacity="0.45"/><path d="M873.6 220 Q 841.8173069698659 146.68060125886754 780 220.00000000000003 Q 894.9069214799254 148.18036096450808 900 193.6 Z" fill="#1388C6" fill-opacity="0.45"/><path d="M900 193.6 Q 973.3193987411324 161.81730696986583 900 100 Q 971.819639035492 214.9069214799254 926.4 220 Z" fill="#54B23C" fill-opacity="0.45"/><circle cx="900" cy="220" r="16.8" fill="#fff" fill-opacity="0.45"/></g>
+</svg>

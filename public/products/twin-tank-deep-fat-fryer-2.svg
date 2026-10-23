@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-label="Twin Tank Deep Fat Fryer — detail — demo image">
+  
+  <defs>
+    <linearGradient id="bg-fryeradd8" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2437"/>
+      <stop offset="1" stop-color="#061320"/>
+    </linearGradient>
+    <linearGradient id="accent-fryeradd8" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/>
+      <stop offset="1" stop-color="#54B23C"/>
+    </linearGradient>
+    <radialGradient id="glow-fryeradd8" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#1388C6" stop-opacity="0.22"/>
+      <stop offset="0.6" stop-color="#54B23C" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#061320" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-fryeradd8" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-fryeradd8)"/>
+  <rect width="800" height="600" fill="url(#grid-fryeradd8)"/>
+  <rect width="800" height="600" fill="url(#glow-fryeradd8)"/>
+  <rect x="0" y="0" width="800" height="6" fill="url(#accent-fryeradd8)"/>
+  <g transform="translate(0,20)">
+    <g stroke="#8FCBEB" stroke-width="3" fill="none" stroke-linejoin="round">
+      <rect x="280" y="150" width="200" height="150" rx="6"/>
+      <rect x="300" y="170" width="70" height="60" rx="3"/>
+      <rect x="390" y="170" width="70" height="60" rx="3"/>
+      <path d="M300 260 h160" stroke-opacity="0.5"/>
+      <path d="M280 300 l-16 22 M480 300 l16 22"/>
+    </g></g>
+  <text x="400" y="345" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#DCEBF6" text-anchor="middle">Twin Tank Deep Fat</text><text x="400" y="373" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#DCEBF6" text-anchor="middle">Fryer — detail</text>
+  <line x1="340" y1="312" x2="460" y2="312" stroke="url(#accent-fryeradd8)" stroke-width="2"/>
+  
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="86" height="24" rx="4" fill="url(#accent-tag)"/>
+      <text x="43" y="16" font-family="Arial, sans-serif" font-size="12" font-weight="700"
+        letter-spacing="1.5" fill="#ffffff" text-anchor="middle">DEMO</text>
+    </g>
+    <defs><linearGradient id="accent-tag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1388C6"/><stop offset="1" stop-color="#54B23C"/>
+    </linearGradient></defs>
+</svg>
