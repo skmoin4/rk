@@ -84,6 +84,20 @@ export const services = [
   },
 ];
 
+// Generic sector types the business's products and services are suited to —
+// not specific client names or logos, since none are published on the source
+// profile. Shown on the homepage in place of real client/partner logos.
+export const clientSectors = [
+  { name: "Hotels & Restaurants", icon: "hotel" },
+  { name: "Commercial Kitchens & Catering", icon: "utensils-crossed" },
+  { name: "Food Processing Plants", icon: "factory" },
+  { name: "Cold Storage & Warehousing", icon: "warehouse" },
+  { name: "Hospitals & Healthcare", icon: "heart-pulse" },
+  { name: "Educational Institutes", icon: "graduation-cap" },
+  { name: "Textile & Garment Units", icon: "shirt" },
+  { name: "Corporate & Office Spaces", icon: "building-2" },
+];
+
 export const nav = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },

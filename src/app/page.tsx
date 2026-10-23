@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ProductCard } from "@/components/ProductCard";
 import { Media } from "@/components/Media";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { company, whyChooseUs, services } from "@/data/company";
+import { company, whyChooseUs, services, clientSectors } from "@/data/company";
 import { categories, featuredProducts, categoryCount } from "@/data/products";
 import { projects } from "@/data/showcase";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -289,6 +289,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Clients / sectors served */}
+      <section className="bg-white py-20 sm:py-28">
+        <div className="container-rk">
+          <SectionHeading
+            align="center"
+            eyebrow="Who we work with"
+            index="/ 07"
+            title="Trusted across these sectors"
+            intro="RK Air Duct's ducting and kitchen fabrication is built for the industries that depend on steady airflow and clean kitchens."
+          />
+          <Reveal stagger className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {clientSectors.map((sector) => (
+              <div
+                key={sector.name}
+                className="group flex flex-col items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center transition-all hover:-translate-y-1 hover:border-transparent hover:bg-white hover:shadow-card"
+              >
+                <span className="grid h-12 w-12 place-items-center rounded-xl bg-white text-slate-400 ring-1 ring-slate-200 transition-all group-hover:bg-brand-gradient group-hover:text-white group-hover:ring-transparent">
+                  <ServiceIcon name={sector.icon} className="h-6 w-6" />
+                </span>
+                <p className="text-xs font-semibold leading-snug text-slate-700">{sector.name}</p>
+              </div>
+            ))}
+          </Reveal>
+          <p className="mt-8 text-center text-xs text-slate-400">
+            Representative sectors shown for the demo — to be replaced with real client logos.
+          </p>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="relative overflow-hidden bg-ink py-20 text-white sm:py-28">
         <div className="absolute inset-0 blueprint opacity-40" aria-hidden="true" />
@@ -302,7 +331,7 @@ export default function HomePage() {
           <SectionHeading
             align="center"
             eyebrow="What clients say"
-            index="/ 07"
+            index="/ 08"
             tone="light"
             title="Trusted for ducting and kitchen fabrication"
             intro="A few words on the kind of results we aim for on every job."
